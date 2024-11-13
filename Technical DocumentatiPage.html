@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation</title>
+    <style>
+        /* General Layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            background-color: #f4f4f4;
+        }
+
+        /* Navbar Styling */
+        #navbar {
+            width: 20%;
+            background-color: #2d3e50;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            height: 100vh;
+            overflow: auto;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        #navbar header {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        #navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 10px 0;
+            display: block;
+        }
+
+        #navbar a:hover {
+            background-color: #3c4f63;
+            padding-left: 10px;
+        }
+
+        /* Main Content Styling */
+        #main-doc {
+            margin-left: 20%;
+            padding: 20px;
+            width: 80%;
+        }
+
+        .main-section {
+            margin-bottom: 30px;
+        }
+
+        .main-section header {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        code {
+            background-color: #f4f4f4;
+            padding: 5px;
+            border-radius: 4px;
+            display: block;
+            margin: 10px 0;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        /* Responsiveness for smaller screens */
+        @media screen and (max-width: 800px) {
+            body {
+                flex-direction: column;
+            }
+
+            #navbar {
+                width: 100%;
+                position: relative;
+                height: auto;
+            }
+
+            #main-doc {
+                margin-left: 0;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <header>Technical Documentation</header>
+        <a href="#JavaScript_and_Java" class="nav-link">JavaScript and Java</a>
+        <a href="#HTML_and_CSS" class="nav-link">HTML and CSS</a>
+        <a href="#Python" class="nav-link">Python</a>
+        <a href="#Data_Structures" class="nav-link">Data Structures</a>
+        <a href="#Algorithms" class="nav-link">Algorithms</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-doc">
+        <!-- Section 1 -->
+        <section class="main-section" id="JavaScript_and_Java">
+            <header>JavaScript and Java</header>
+            <p>JavaScript and Java are two different programming languages with some similarities.</p>
+            <code>console.log('Hello World');</code>
+            <p>JavaScript is mainly used for web development, while Java is used for building larger, more complex applications.</p>
+            <code>System.out.println("Hello World");</code>
+            <p>JavaScript is interpreted, while Java is compiled.</p>
+            <ul>
+                <li>JavaScript is often used in front-end web development.</li>
+                <li>Java is known for its cross-platform capabilities.</li>
+                <li>JavaScript supports functional programming.</li>
+                <li>Java is statically typed, JavaScript is dynamically typed.</li>
+                <li>JavaScript runs in browsers, while Java requires a virtual machine (JVM).</li>
+            </ul>
+        </section>
+
+        <!-- Section 2 -->
+        <section class="main-section" id="HTML_and_CSS">
+            <header>HTML and CSS</header>
+            <p>HTML (HyperText Markup Language) is used to structure web pages, while CSS (Cascading Style Sheets) is used for styling them.</p>
+            <code>&lt;html&gt;</code>
+            <p>HTML defines elements like paragraphs, headings, links, etc.</p>
+            <code>&lt;h1&gt;Heading&lt;/h1&gt;</code>
+            <p>CSS is used to style those elements with colors, fonts, and layout.</p>
+            <ul>
+                <li>HTML defines the structure of a webpage.</li>
+                <li>CSS defines the appearance of a webpage.</li>
+                <li>HTML tags are the building blocks of webpages.</li>
+                <li>CSS selectors are used to target HTML elements.</li>
+                <li>CSS can be inline, internal, or external.</li>
+            </ul>
+        </section>
+
+        <!-- Section 3 -->
+        <section class="main-section" id="Python">
+            <header>Python</header>
+            <p>Python is a high-level, interpreted programming language known for its simplicity and readability.</p>
+            <code>print("Hello, World!")</code>
+            <p>Python supports multiple programming paradigms, including procedural, object-oriented, and functional programming.</p>
+            <ul>
+                <li>Python is easy to learn and has a clean syntax.</li>
+                <li>It is widely used in web development, data science, and automation.</li>
+                <li>Python has a vast ecosystem of libraries and frameworks.</li>
+                <li>It is a cross-platform language, which runs on multiple operating systems.</li>
+                <li>Python is dynamically typed, meaning you don't need to declare variable types explicitly.</li>
+            </ul>
+        </section>
+
+        <!-- Section 4 -->
+        <section class="main-section" id="Data_Structures">
+            <header>Data Structures</header>
+            <p>Data structures are ways to organize and store data for efficient processing.</p>
+            <code>list = [1, 2, 3, 4]</code>
+            <p>Common data structures include arrays, linked lists, stacks, queues, and trees.</p>
+            <ul>
+                <li>Arrays allow access by index.</li>
+                <li>Linked lists are useful for efficient insertions and deletions.</li>
+                <li>Stacks follow the Last In First Out (LIFO) principle.</li>
+                <li>Queues follow the First In First Out (FIFO) principle.</li>
+                <li>Trees represent hierarchical data.</li>
+            </ul>
+        </section>
+
+        <!-- Section 5 -->
+        <section class="main-section" id="Algorithms">
+            <header>Algorithms</header>
+            <p>Algorithms are step-by-step instructions for solving problems or performing tasks.</p>
+            <code>def bubbleSort(arr):</code>
+            <p>Some common algorithms include sorting algorithms like quicksort, mergesort, and bubble sort.</p>
+            <ul>
+                <li>Quicksort is an efficient sorting algorithm with average time complexity of O(n log n).</li>
+                <li>Mergesort divides the input into smaller subarrays and merges them back together.</li>
+                <li>Bubble sort repeatedly swaps adjacent elements if they are in the wrong order.</li>
+                <li>Algorithms can be classified based on time and space complexity.</li>
+                <li>Greedy algorithms make local optimal choices to find a global optimum.</li>
+            </ul>
+        </section>
+    </main>
+
+</body>
+</html>

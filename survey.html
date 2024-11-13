@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        #title {
+            font-size: 2.5rem;
+            color: #2a9d8f;
+        }
+
+        #description {
+            font-size: 1.2rem;
+            color: #264653;
+            margin-top: 10px;
+        }
+
+        /* Form Styling */
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+            color: #264653;
+        }
+
+        input, select, textarea {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        textarea {
+            height: 100px;
+            resize: none;
+        }
+
+        button {
+            padding: 10px 15px;
+            font-size: 1.1rem;
+            color: white;
+            background-color: #2a9d8f;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #264653;
+        }
+
+        /* Validation Messages */
+        input:invalid {
+            border-color: red;
+        }
+
+        input:valid {
+            border-color: green;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            border-color: #2a9d8f;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Please fill out the survey form below to provide your feedback.</p>
+    </header>
+
+    <main>
+        <form id="survey-form">
+            <!-- Name Field -->
+            <label for="name" id="name-label">Your Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <!-- Email Field -->
+            <label for="email" id="email-label">Your Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <!-- Number Field -->
+            <label for="number" id="number-label">Your Age:</label>
+            <input type="number" id="number" placeholder="Enter your age" min="18" max="100" required>
+
+            <!-- Dropdown -->
+            <label for="dropdown">Select a Country:</label>
+            <select id="dropdown" required>
+                <option value="us">United States</option>
+                <option value="ca">Canada</option>
+                <option value="gb">United Kingdom</option>
+                <option value="au">Australia</option>
+            </select>
+
+            <!-- Radio Buttons -->
+            <label>How did you hear about us?</label>
+            <label for="radio1">
+                <input type="radio" name="referral" id="radio1" value="friends" required> Friends
+            </label>
+            <label for="radio2">
+                <input type="radio" name="referral" id="radio2" value="online"> Online
+            </label>
+            <label for="radio3">
+                <input type="radio" name="referral" id="radio3" value="other"> Other
+            </label>
+
+            <!-- Checkboxes -->
+            <label>Which services are you interested in?</label>
+            <label for="checkbox1">
+                <input type="checkbox" id="checkbox1" value="web"> Web Development
+            </label>
+            <label for="checkbox2">
+                <input type="checkbox" id="checkbox2" value="app"> App Development
+            </label>
+            <label for="checkbox3">
+                <input type="checkbox" id="checkbox3" value="design"> Design Services
+            </label>
+
+            <!-- Textarea -->
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" placeholder="Write your comments here"></textarea>
+
+            <!-- Submit Button -->
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>

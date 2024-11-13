@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tribute Page</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Main Container */
+        main {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Title Styling */
+        #title {
+            font-size: 2.5rem;
+            text-align: center;
+            color: #2a9d8f;
+            margin-bottom: 20px;
+        }
+
+        /* Image Container */
+        #img-div {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #image {
+            display: block; /* Ensure image is block-level to help with centering */
+            width: 100%; /* Makes image responsive */
+            max-width: 100%; /* Ensures image will never exceed container's width */
+            height: auto; /* Keeps the aspect ratio intact */
+            border-radius: 8px;
+            margin: 0 auto; /* Centers the image horizontally */
+        }
+
+        /* Image Caption */
+        #img-caption {
+            font-style: italic;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        /* Tribute Information */
+        #tribute-info {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        /* Link Styling */
+        #tribute-link {
+            display: block;
+            text-align: center;
+            font-size: 1.2rem;
+            color: #2a9d8f;
+            text-decoration: none;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        #tribute-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsiveness */
+        @media screen and (max-width: 600px) {
+            #title {
+                font-size: 2rem;
+            }
+
+            #tribute-info {
+                font-size: 1rem;
+            }
+
+            #tribute-link {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main id="main">
+        <!-- Title -->
+        <h1 id="title">Dr. Norman Borlaug</h1>
+
+        <!-- Image and Caption -->
+        <figure id="img-div">
+            <img id="image" src="https://upload.wikimedia.org/wikipedia/commons/1/14/Norman_Borlaug_1970.jpg" alt="Dr. Norman Borlaug">
+            <figcaption id="img-caption">Dr. Norman Borlaug, often referred to as the "Father of the Green Revolution"</figcaption>
+        </figure>
+
+        <!-- Tribute Information -->
+        <div id="tribute-info">
+            Dr. Norman Borlaug was an American agronomist and humanitarian who is credited with saving over a billion people from starvation. His work in developing high-yielding varieties of wheat helped combat hunger in countries facing famine, particularly in India and Pakistan, during the 1960s. He was awarded the Nobel Peace Prize in 1970 for his efforts in feeding the world's growing population. 
+            <br><br>
+            Borlaug's contributions to agricultural science and global food security earned him a place as one of the most influential figures of the 20th century.
+        </div>
+
+        <!-- External Link -->
+        <a id="tribute-link" href="https://en.wikipedia.org/wiki/Norman_Borlaug" target="_blank">Learn more about Dr. Norman Borlaug on Wikipedia</a>
+    </main>
+</body>
+</html>
